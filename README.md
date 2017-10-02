@@ -25,8 +25,18 @@ composer install
 php artisan migrate:refresh --seed
 
 ```
-open broswer
+Open broswer
  http://localhost:8000
  
-open Api document
+Open Api document
  http://localhost:8000/api/doc
+ 
+Can run unittest in docker
+```bash
+docker exec -it <ContainerID> /bin/bash 
+    (****OR****    docker exec -it <ContainerID> sh)
+    (***example*** docker exec -it 345a3a6b9831 sh)
+cd project
+phpunit
+
+```

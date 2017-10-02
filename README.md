@@ -8,7 +8,7 @@ use port 3306, 8000
 
 ```bash
 git clone https://github.com/pakaya16/test_users.git
-cd worktodotask
+cd test_users
 docker-compose up -d
 docker ps
 ```
@@ -17,8 +17,10 @@ docker ps
 **_345a3a6b9831_**        worktodotask_phpfpm   "docker-php-entryp..."   4 minutes ago       Up 4 minutes        9000/tcp                      worktodotask_phpfpm_1
 
 ```bash
-docker exec -it < ContainerID > /bin/bash
-cd laravel
+docker exec -it <ContainerID> /bin/bash 
+    (****OR****    docker exec -it <ContainerID> sh)
+    (***example*** docker exec -it 345a3a6b9831 sh)
+cd project
 composer install
 php artisan migrate:refresh --seed
 

@@ -138,6 +138,8 @@
 
             updateUser()
             {
+                this.user.birthday = $('.cov-datepicker').val();
+
                 let uri = '/api/v1/users/'+this.$route.params.id;
                 this.axios.patch(uri, this.user).then((response) => {
 

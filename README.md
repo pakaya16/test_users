@@ -14,7 +14,7 @@ docker ps
 ```
 **copy ContainerID**
 
-**_345a3a6b9831_**        testusers_phpfpm   "docker-php-entryp..."   4 minutes ago       Up 4 minutes        9000/tcp                      worktodotask_phpfpm_1
+**_345a3a6b9831_**        testusers_phpfpm   "docker-php-entryp..."   4 minutes ago       Up 4 minutes        9000/tcp                      testusers_phpfpm_1
 
 ```bash
 docker exec -it <ContainerID> /bin/bash 

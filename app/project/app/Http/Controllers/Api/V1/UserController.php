@@ -35,7 +35,7 @@ class UserController extends Controller
                     ->take($limit)
                     ->skip(($page - 1) * $limit);
 
-        if($request->has('conditionField') && $request->has('conditionValue'))
+        if($request->get('conditionField') && $request->get('conditionValue'))
             $userData->where(e($request->get('conditionField')), e($request->get('conditionValue')));
 
         $result = $userData->get();

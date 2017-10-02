@@ -26,9 +26,7 @@ php artisan migrate:refresh --seed
 
 ```
 open broswer
- http://localhost/
+ http://localhost:8000
  
- see text laravel
- 
-open document
- http://localhost/doc
+open Api document
+ http://localhost:8000/api/doc
